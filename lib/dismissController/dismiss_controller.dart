@@ -79,7 +79,7 @@ class __DismissState extends State<EasyDismiss> with TickerProviderStateMixin {
   }
 
   Curve get reverseCurve => widget.reverseCurve ?? widget.curve;
-  Curve get curve => widget.reverse == true ? widget.curve : reverseCurve;
+  Curve get curve => widget.reverse == false ? widget.curve : reverseCurve;
 
   @override
   void dispose() {

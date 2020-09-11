@@ -70,6 +70,11 @@ class EasyFlipAnimaiton extends EasyDirectionAnimation {
       case EasyAnimationDirection.rtl:
       case EasyAnimationDirection.ltr:
       case EasyAnimationDirection.tvc:
+
+        /// 解决向上翻 90°没有完全隐藏问题
+        if (value == 0) {
+          m..setEntry(3, 2, 0.0);
+        }
         return m..rotateY((1 - value) * pi / 2);
     }
     return m;

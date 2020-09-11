@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
               key: UniqueKey(),
               alignment: Alignment.topCenter,
               child: Container(
-                width: 200,
+                width: 280,
                 height: 250,
                 child: FlutterEasyMessage(
                   child: child,
@@ -254,10 +254,6 @@ class _MyHomePageState extends State<MyHomePage> {
           padding: EdgeInsets.all(5.0),
           child: Text('bounceIn'),
         ),
-        Curves.bounceOut: Padding(
-          padding: EdgeInsets.all(5.0),
-          child: Text('bounceOut'),
-        ),
         Curves.decelerate: Padding(
           padding: EdgeInsets.all(5.0),
           child: Text('decelerate'),
@@ -311,6 +307,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  // ignore: missing_return
   Widget get messageChild {
     switch (type) {
       case ChildType.msg:
@@ -318,7 +315,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Text(
             '今天有大雨，记得带伞🌲😯',
           ),
-          height: 50,
+          height: 30,
           alignment: Alignment.center,
           decoration: BoxDecoration(
               color: Colors.black38,
@@ -337,26 +334,29 @@ class _MyHomePageState extends State<MyHomePage> {
               borderRadius: BorderRadius.all(Radius.circular(10))),
         );
       case ChildType.view:
-        return Container(
-          child: Row(
-            children: [
-              Image.asset(
-                'img/0.jpeg',
-                fit: BoxFit.fitWidth,
+        return ClipRRect(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+          child: Container(
+              child: Row(
+                children: [
+                  Image.asset(
+                    'img/0.jpeg',
+                    fit: BoxFit.fitWidth,
+                  ),
+                  SizedBox(
+                    width: 50,
+                  ),
+                  Expanded(
+                    child: Text(
+                      'www.fgyong.cn \n 快来关注我 www.github/ifgyong',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  )
+                ],
               ),
-              Expanded(
-                child: Text(
-                  'www.fgyong.cn \n 快来关注我 www.github/ifgyong',
-                  style: TextStyle(color: Colors.white),
-                ),
-              )
-            ],
-          ),
-          height: 100,
-          // width: 200,
-          decoration: BoxDecoration(
-              color: Colors.black38,
-              borderRadius: BorderRadius.all(Radius.circular(10))),
+              height: 80,
+              // width: 200,
+              color: Colors.black38),
         );
     }
   }
