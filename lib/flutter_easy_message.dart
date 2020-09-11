@@ -8,3 +8,4 @@ export 'animation/fade.dart';
 export 'easy_message.dart';
 export 'animation/flip.dart';
 export 'animation/size.dart';
+export 'easy_message.dart';

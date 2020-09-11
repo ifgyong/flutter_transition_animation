@@ -4,12 +4,30 @@
 
 🔥🔥🔥可配置的动画转场，用来展示顶部提示信息更香哦
 
-## 效果
+## 效果🔥🔥🔥
 ![](flutter_transform_msg.gif)
 
 ## 如何使用
+#### pub
+在工程文件`yaml`写入下面配置：
 
-## 动画步骤
+```dart
+
+flutter_transition_animation: ^*.*.*
+
+```
+> ⚠️ [最新版本查看](https://pub.dev/packages/flutter_transition_animation/install)
+>
+> ![](https://img.shields.io/pub/v/flutter_transition_animation)
+
+#### 导入
+
+```
+import 'package:flutter_transition_animation/flutter_easy_message.dart';
+
+```
+
+## 🐎动画步骤
 
 动画进入可以定制进入的时间，动画规则，和动画的方向。
 
@@ -27,8 +45,9 @@
 |easy| 渐隐渐显|
 |easIn| 缓慢进入|
 |line|匀速|
-...
-更多规则见: [animation](https://api.flutter.dev/flutter/animation/Curves-class.html)
+
+
+> 更多规则见: [animation](https://api.flutter.dev/flutter/animation/Curves-class.html)
 
 |时间属性|含义|
 |:-:|:-:|
@@ -37,13 +56,13 @@
 |hideDuration| 动画消失使用的时间|
 
 
-## 执行动画
+## 🚗 执行动画
 
 
-> 只需要设定不一样的key即可。
+> ⚠️ 只需要设定不一样的key即可。
 
 
-## examaple
+## 🌰🌰🌰examaple
 
 ```dart
 
@@ -115,6 +134,6 @@ Container(
 ```
 
 
-## 喜欢就留下你的✨✨
+## ❤️❤️❤️[喜欢就留下你的✨✨](https://github.com/ifgyong/flutter_transition_animation)
 
-## [License](LICENSE)
+## 🔐[License](LICENSE)

@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_transition_animation/easy_message.dart';
 import 'package:flutter_transition_animation/flutter_easy_message.dart';
 
 void main() {
