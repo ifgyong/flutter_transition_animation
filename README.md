@@ -1,4 +1,7 @@
 # flutter_transition_animation
+![](https://badgen.net/github/license/micromatch/micromatch)
+![](https://img.shields.io/pub/v/flutter_transition_animation)
+
 🔥🔥🔥可配置的动画转场，用来展示顶部提示信息更香哦
 
 ## 效果
