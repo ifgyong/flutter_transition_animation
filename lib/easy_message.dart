@@ -8,15 +8,6 @@ import 'flutter_easy_message.dart';
 /// Created by fgyong on 2020/9/10.
 ///
 
-// enum EasyMessageStyle {
-//   defaultStyle,
-//   /*渐隐渐显*/
-//   fade,
-//   /*大小变化*/
-//   size,
-//   /*翻转*/
-//   flip,
-// }
 enum EasyShowOrHideStyle {
   defaultStyle,
   /*渐隐渐显*/
@@ -29,7 +20,7 @@ enum EasyShowOrHideStyle {
 
 // ignore: must_be_immutable
 class FlutterEasyMessage extends StatelessWidget {
-  /// 主题 部件
+  /// 主体 部件
   final Widget child;
 
   /// 展示 动画的部件
